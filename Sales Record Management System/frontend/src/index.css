@@ -1,0 +1,2 @@
+@import "tailwindcss";
+@theme { --color-surface:#fff7ed ; --color-card: #ffffff; --color-ink:#14532D ; --color-muted: black; --color-line:black; --color-sidebar: black; --color-sidebar-text:  #ffffff; --color-accent: #263882; --color-accent-text: #000000; }
