@@ -1,13 +1,20 @@
 const mysql = require("mysql2/promise");
 
+const MYSQL_HOST = "127.0.0.1";
+const MYSQL_PORT = 3306;
+const MYSQL_USER = "root";
+const MYSQL_PASSWORD = "";
+const MYSQL_DATABASE = "sims";
+const MYSQL_CONNECTION_LIMIT = 10;
+
 const dbConfig = {
-  host: process.env.MYSQL_HOST || "127.0.0.1",
-  port: Number(process.env.MYSQL_PORT || 3306),
-  user: process.env.MYSQL_USER || "root",
-  password: process.env.MYSQL_PASSWORD || "",
-  database: process.env.MYSQL_DATABASE || "sims",
+  host: MYSQL_HOST,
+  port: MYSQL_PORT,
+  user: MYSQL_USER,
+  password: MYSQL_PASSWORD,
+  database: MYSQL_DATABASE,
   waitForConnections: true,
-  connectionLimit: Number(process.env.MYSQL_CONNECTION_LIMIT || 10),
+  connectionLimit: MYSQL_CONNECTION_LIMIT,
   queueLimit: 0,
 };
 
